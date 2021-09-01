@@ -19,7 +19,7 @@ export class HyperionModuleLoader {
         this.conn = cm.connections;
         this.config = cm.config;
         if (!this.conn.chains[this.config.settings.chain]) {
-            console.log('Chain  ' + this.config.settings.chain + ' not defined on connections.json!');
+            console.log('Chain ' + this.config.settings.chain + ' not defined in connections.json!');
             process.exit(0);
         }
         this.chainID = this.conn.chains[this.config.settings.chain].chain_id;
